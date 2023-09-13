@@ -16,11 +16,17 @@ export function Asx(){
 export function Contactus()
 { 
         const a=50;
+        const Name ='Nitesh Chaudhary';
+        const b=20;
+        const c="";
         return(
         <Fragment>
                 <h2>This is compiled</h2>
                 <h1 style={{backgroundColor: "blue", color:"white", fontSize:`${a}px`,fontFamily:'Helvetica'}}>This is headright</h1>
                 <p className="hand">This is paragraph</p>
+                {Name}
+                {b+c}
+                {c ? "ok" : "no"}
         </Fragment>
         )
 }
