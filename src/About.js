@@ -1,19 +1,6 @@
 import React, { Fragment } from "react";
 
-function Abm()
-{
-        return <div>
-        <h1>This is heading</h1>
-        <h2>This is react js</h2>
-        <h3>Welcome to react js</h3>
-        </div>;
-}
-export default Abm;
-export function Asx(){
-        return <p>This is page</p>
-}
-
-export function Contactus()
+function Contactus()
 { 
         const a=50;
         const Name ='Nitesh Chaudhary';
@@ -21,8 +8,6 @@ export function Contactus()
         const c="";
         return(
         <Fragment>
-                <h2>This is compiled</h2>
-                <h1 style={{backgroundColor: "blue", color:"white", fontSize:`${a}px`,fontFamily:'Helvetica'}}>This is headright</h1>
                 <p className="hand">This is paragraph</p>
                 {Name}
                 {b+c}
@@ -30,3 +15,4 @@ export function Contactus()
         </Fragment>
         )
 }
+export default Contactus

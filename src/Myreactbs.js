@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 function GridComplexExample() {
         return (
           <Form>
-            <Row className="mb-3">
+            <Row className="mb-3 marginTop: 50">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
