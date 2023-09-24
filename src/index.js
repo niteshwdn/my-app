@@ -6,7 +6,9 @@ import "./modules/css/style.css";
 import Mynavbar from "./modules/shares/Mynavbar";
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Mylandingpage from './modules/components/mylandingpage';
-
+import Errorpage from './modules/components/Errorpage';
+import Mycontactus from './modules/components/Mycontactus';
+import Myabout from './modules/components/Myaboutpage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -14,6 +16,9 @@ root.render(
     <Mynavbar/>
     <Routes>
         <Route path='/'element={<Mylandingpage/>}></Route>
+        <Route path='*' element= {<Errorpage/>}/>
+        <Route path='contact' element= {<Mycontactus/>}/>
+        <Route path='Myabout' element= {<Myabout/>}/>
         </Routes> 
     </BrowserRouter>
   </React.StrictMode>
