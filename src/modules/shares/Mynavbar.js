@@ -24,6 +24,9 @@ function Mynavbar() {
                     <Link className="nav-link" to="Myabout">About</Link>
                   </li>
                   <li className="nav-item">
+                    <Link className="nav-link" to="Myaxiosdata">Axios</Link>
+                  </li>
+                  <li className="nav-item">
                     <Link className="nav-link" to="o">Link</Link>
                   </li>
                   <li className="nav-item dropdown">

@@ -9,23 +9,26 @@ function Myabout() {
         return (
                 <div className="container">
                         <div className="row coll">
-                                <div className="col-12">
-                                        <h1>Total Users:{Mydata.length}</h1>
-                                </div>
+                                <details>
+                                        <summary>My Users informesan</summary>
+                                        <h1><ins>My Total Users:{Mydata.length}</ins></h1>
+                                </details>
+
                                 {Mydata.map((p) => {
                                         return (
-                                                <Card className="txet" style={{ width: '200px', margin: '5px',}}>
+                                                <div className="col-md-3 mt-3">
                                                         <Card.Img variant="top" src={p.Myimg} />
                                                         <Card.Body>
                                                                 <Card.Title>{p.name}</Card.Title>
                                                                 <Card.Text>
-                                                                        Some quick example text to build on the card title and make up the
-                                                                        bulk of the card's content.
+                                                                        Some quick <del><b>example</b></del> text to build on <dfn>the card title and make
+                                                                                up</dfn> <ins>the</ins> <i>bulk of the card's content.</i>
                                                                 </Card.Text>
-                                                                <Button variant="primary">Go somewhere</Button>
+                                                                <a href={p.href}>
+                                                                        <Button type="texa">Go somewhere</Button>
+                                                                </a>
                                                         </Card.Body>
-                                                </Card>
-
+                                                </div>
                                         )
                                 })}
 
