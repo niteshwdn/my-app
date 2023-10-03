@@ -16,7 +16,7 @@ function Myabout() {
 
                                 {Mydata.map((p) => {
                                         return (
-                                                <div className="col-md-3 mt-3">
+                                                <div className="col-md-3 mt-2 border shadow p-2 ">
                                                         <Card.Img variant="top" src={p.Myimg} />
                                                         <Card.Body>
                                                                 <Card.Title>{p.name}</Card.Title>

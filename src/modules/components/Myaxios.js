@@ -13,14 +13,12 @@ function Myaxios() {
         useEffect(()=>{
                 myapi();
         },[])
-        return (
-                <div>
-                        <button type="button" onClick={myapi}>get data</button>
+        return (       
                         <div className="container">
                                 <div className="row">
                                         {svariale.map((b) => {
                                                 return (
-                                                        <div className="col-md-3" key={b.id}>
+                                                        <div className="col-md-3 coll" key={b.id}>
                                                                 <div className="card">
                                                                         <div className="card-boyd">
                                                                                 <h2 className="card-title">{b.id}</h2>
@@ -35,7 +33,6 @@ function Myaxios() {
                                         })}
                                 </div>
                         </div>
-                </div>
 
         )
 

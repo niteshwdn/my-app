@@ -20,10 +20,10 @@ function ProductDetails() {
         },[])
 
         return (
-                <div>
-                        <h1>ProductDetails</h1>
+                <div className="coll">
+                        <h3>ProductDetails</h3>
                         <h2>{singledata.id}</h2>
-                        <h3>{singledata.tital}</h3>
+                        <h2>{singledata.title}</h2>
                 </div>
         )
 }

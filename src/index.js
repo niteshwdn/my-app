@@ -5,13 +5,14 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import "./modules/css/style.css";
 import Mynavbar from "./modules/shares/Mynavbar";
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import Mylandingpage from './modules/components/mylandingpage';
+import Mylandingpage from './modules/components/Mylandingpage';
 import Errorpage from './modules/components/Errorpage';
 import Mycontactus from './modules/components/Mycontactus';
 import Myabout from './modules/components/Myaboutpage';
 import Myaxios from './modules/components/Myaxios';
 import ProductDetails from './modules/components/ProductDetails';
 import Mygraphpage from './modules/components/Mygraphpage';
+import Myregistorpage from './modules/auth/Myregistorpage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,13 +20,14 @@ root.render(
     <BrowserRouter>
     <Mynavbar/>
     <Routes>
-        <Route path='/'element={<Mylandingpage/>}></Route>
+        <Route path='/' element={<Mylandingpage/>}/>
         <Route path='*' element= {<Errorpage/>}/>
         <Route path='contact' element= {<Mycontactus/>}/>
         <Route path='Myabout' element= {<Myabout/>}/>
         <Route path='Myaxiosdata' element= {<Myaxios/>}/>
         <Route path='Myaxiosdata/Details/:id' element= {<ProductDetails/>}/>
         <Route path='Mygraph' element= {<Mygraphpage/>}/>
+        <Route path='registor' element= {<Myregistorpage/>}/>
         </Routes> 
     </BrowserRouter>
   </React.StrictMode>
