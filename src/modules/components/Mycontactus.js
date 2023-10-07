@@ -26,13 +26,14 @@ function Mycontactus() {
             <input type="text" id="one5" placeholder="+91"/><br/><br/>
             <input type="text" placeholder="Phone no"/><br/><br/>
             <label>current Address:</label><br/>
-            <textarea>current Address</textarea><br/>
+            <textarea placeholder="current Address"></textarea><br/>
             <label>E-mail:</label><br/>
             <input type="text" placeholder="E-Mail"/><br/><br/>
             <label>Password:</label><br/>
             <input type="text" placeholder="Enter Password"/><br/><br/>
             <label>Re-type Password:</label><br/>
-            <input type="text" placeholder="Retype Password"/><br/><br/>
+            <input type="text" placeholder="Retype Password"/><br/>
+            <input type="checkbox"/>Remark
             <input type="submit" value="Submit" onclick="abc()"/>
         
                   </div>

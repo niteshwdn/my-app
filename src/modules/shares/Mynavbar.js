@@ -9,7 +9,7 @@ function Mynavbar() {
         <div className="col-12">
           <nav className="navbar navbar-expand-lg tex">
             <div className="container-fluid ">
-              <Link className="navbar-brand" to="https://nitesh123.netlify.app/"><BsFillGridFill/></Link>
+              <Link className="navbar-brand" to="https://nitesh123.netlify.app/"><BsFillGridFill /></Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -30,16 +30,14 @@ function Mynavbar() {
                   <li className="nav-item">
                     <Link className="nav-link" to="Mygraph">Graph</Link>
                   </li>
-                  <li className="nav-item dropdown">
-                    <Link className="nav-link dropdown-toggle" to="o" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li><Link className="dropdown-item" to="o">Action</Link></li>
-                      <li><Link className="dropdown-item" to="o">Another action</Link></li>
-                      <li><hr className="dropdown-divider" /></li>
-                      <li><Link className="dropdown-item" to="o">Something else here</Link></li>
-                    </ul>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="mylazy">Lazy</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="myservice">Service</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link disabled" aria-disabled="true">Disabled</Link>
                   </li>
                 </ul>
                 <form className="d-flex me-3" role="search">
@@ -51,9 +49,9 @@ function Mynavbar() {
                       <strong>Hello</strong>
                     </Link>
                     <ul className="dropdown-menu dropdown-menu-light text-small shadow" data-popper-placement="top-start" >
-                      <li><Link className="dropdown-item" style={{color:"red"}} href="#">Login</Link></li>
-                      <li><Link className="dropdown-item" style={{color:"green"}} to="registor">Registor</Link></li>
-                      <li><Link className="dropdown-item" style={{color:"orange"}} to="/">Sign out</Link></li>
+                      <li><Link className="dropdown-item" style={{ color: "red" }} to="mylogin">Login</Link></li>
+                      <li><Link className="dropdown-item" style={{ color: "green" }} to="registor">Registor</Link></li>
+                      <li><Link className="dropdown-item" style={{ color: "orange" }} to="/">Sign out</Link></li>
                     </ul>
                   </div>
                 </form>

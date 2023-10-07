@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
@@ -13,6 +13,14 @@ import Myaxios from './modules/components/Myaxios';
 import ProductDetails from './modules/components/ProductDetails';
 import Mygraphpage from './modules/components/Mygraphpage';
 import Myregistorpage from './modules/auth/Myregistorpage';
+import Mylogin from './modules/auth/Mylogin';
+import Service from './modules/components/Service';
+import Buymobilepage from './modules/components/subrouting/Buymobilepage';
+import Repairmobilepage from './modules/components/subrouting/Repairmobilepage';
+
+
+const Mylazym = lazy(()=>import('./modules/components/Mylazypage'));
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +36,19 @@ root.render(
         <Route path='Myaxiosdata/Details/:id' element= {<ProductDetails/>}/>
         <Route path='Mygraph' element= {<Mygraphpage/>}/>
         <Route path='registor' element= {<Myregistorpage/>}/>
+        <Route path='mylogin' element= {<Mylogin/>}/>
+        <Route path='myservice' element={<Service/>}>
+            <Route path='buymobile' element={<Buymobilepage/>}/>
+            <Route path='repair' element={<Repairmobilepage/>}/>
+            <Route path='*' element={<Errorpage/>}/>
+        </Route>
+        <Route path='mylazy' element= {
+           <Suspense fallback={<h1 className='loa'>Loading..</h1>}>
+            <Mylazym/>
+           </Suspense>
+        }>
+
+        </Route>
         </Routes> 
     </BrowserRouter>
   </React.StrictMode>

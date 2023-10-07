@@ -15,11 +15,10 @@ function Myaxios() {
         },[])
         return (       
                         <div className="container">
-                                <div className="row">
+                                <div className="row coll">
                                         {svariale.map((b) => {
                                                 return (
-                                                        <div className="col-md-3 coll" key={b.id}>
-                                                                <div className="card">
+                                                        <div className="col-md-3 p-3 border shadow" key={b.id}>
                                                                         <div className="card-boyd">
                                                                                 <h2 className="card-title">{b.id}</h2>
                                                                                 <h5 className="card-title">{b.title}</h5>
@@ -28,7 +27,6 @@ function Myaxios() {
                                                                                 <Link to={`Details/`+b.id}>View Details</Link>
                                                                         </div>
                                                                 </div>
-                                                        </div>
                                                 )
                                         })}
                                 </div>
